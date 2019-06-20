@@ -9,7 +9,7 @@ IS
 BEGIN 
 
     SELECT university into vs_university_name FROM  INTERN WHERE (first_name = vs_intern_firstname);
-    dbms_output.put_line(vs_university_name);
+    dbms_output.put_line('The name of the university is: '|| vs_university_name);
 END;
 
     
