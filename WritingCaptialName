@@ -1,0 +1,14 @@
+DECLARE
+    v_lenght int;
+    vs_lower_name varchar(50);
+    vs_name varchar(50);
+    vs_original_name varchar(50);
+
+BEGIN
+    vs_original_name := 'gizem#1996';
+    v_lenght := instr(vs_original_name,'#') - 1;
+    vs_lower_name := substr(vs_original_name,0 ,v_lenght);
+    select initcap(vs_lower_name) INTO vs_name FROM dual;
+    dbms_output.put_line('Name: ' || vs_name);
+END;
+/
