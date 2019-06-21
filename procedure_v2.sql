@@ -3,7 +3,7 @@ DECLARE
     vs_university_name INTERN.university %TYPE;
     
 PROCEDURE pis_find_university 
-    (firstname vs_intern_firstname IN INTERN.first_name %TYPE , vs_university_name OUT INTERN.university %TYPE )
+    (vs_intern_firstname IN INTERN.first_name %TYPE , vs_university_name OUT INTERN.university %TYPE )
 IS 
 
 BEGIN 
